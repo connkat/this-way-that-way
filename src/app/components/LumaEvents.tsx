@@ -1,19 +1,41 @@
-		export default function LumaEvents() {
+export default function LumaEvents() {
   return (
-    <section className="w-full py-16" style={{ backgroundColor: '#E2B199' }}>
+    <section className="w-full py-16" style={{ backgroundColor: "#E2B199" }}>
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="heading-2 mb-8 text-center">Upcoming Events</h2>
+        <p className="body-base text-white">
+          Interviews will include artists, entrepreneurs, athletes, scientists,
+          and more. Each session will offer insight into the stories,
+          challenges, and rewards of doing something unique.
+        </p>
+        <p className="body-base text-white">
+          The 60 min sessions happens monthly in 2025-2026, upstairs at House
+          831, from Sept to June.
+        </p>
+        <p className="body-base text-white font-fine-bold">
+          Session attendance is limited by space to ~30 people. We&apos;d love
+          to have you there.
+        </p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Event Card Example */}
           <div className="rounded-lg p-6 bg-white shadow-lg">
-            <h3 className="font-standard-bold text-xl mb-2">Next Episode Recording</h3>
-            <p className="font-fine-regular mb-4">Join us live for our next episode recording!</p>
+            <h3 className="font-standard-bold text-xl mb-2">
+              Next Episode Recording
+            </h3>
+            <p className="font-fine-regular mb-4">
+              Join us live for our next episode recording!
+            </p>
+            <p className="body-base text-white/80">
+              If you can&apos;t make it, no worries. We post the best parts of
+              This Way That Way online.
+            </p>
             <div className="flex justify-between items-center">
               <span className="font-fine-light">Dec 1, 2025</span>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="font-fine-bold px-4 py-2 rounded-lg text-white"
-                style={{ backgroundColor: '#3F6FC4' }}
+                style={{ backgroundColor: "#3F6FC4" }}
               >
                 Register
               </a>

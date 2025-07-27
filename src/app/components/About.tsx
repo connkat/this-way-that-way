@@ -1,22 +1,45 @@
-	export default function About() {
+import Image from "next/image";
+import { getColor } from "@/styles/colors";
+import PodcastRecording from "@/assets/podcast-recording.jpg";
+
+export default function About() {
   return (
-    <section className="w-full py-16" style={{ backgroundColor: '#DE909E' }}>
+    <section
+      className="w-full py-24"
+      style={{ backgroundColor: getColor("pastelCrimson") }}
+    >
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="heading-2 mb-8 text-center text-white">About the Podcast</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <h2 className="heading-2 mb-12 text-center text-white">
+          About This Way That Way
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="body-large text-white">
-              This Way That Way is a podcast about the different paths people take in tech.
-              We talk to developers, designers, and other tech professionals about their journeys.
+              This Way That Way is an interview-style discussion with people
+              who&#39;ve followed their unique calling to something special.
             </p>
-            <p className="body-base text-white">
-              Hosted by experienced developers who have been through it all, we bring you
-              real stories and practical advice for navigating your tech career.
-            </p>
+            {/* <div className="space-y-4"> */}
+						<div className="bg-white/10 rounded-lg p-6 space-y-4">
+
+              <p className="body-base text-white">
+                Whether you&apos;re exploring your own potential, navigating the
+                demands of career choices, finding fulfillment, or in the blank
+                space beyond achievement…. there&apos;s something here for you.
+                These sessions are designed to entertain, nurture, and serve.
+              </p>
+            </div>
           </div>
-          <div className="flex justify-center">
-            {/* Placeholder for podcast artwork/image */}
-            <div className="w-80 h-80 rounded-lg" style={{ backgroundColor: '#F8F269' }}></div>
+
+          <div className="space-y-8">
+            <div className="relative rounded-lg overflow-hidden">
+              <Image
+                src={PodcastRecording}
+                alt="Podcast Recording Session"
+                width={400}
+                height={267}
+                className="w-full max-w-md mx-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
