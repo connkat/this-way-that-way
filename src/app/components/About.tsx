@@ -1,13 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { getColor } from "@/styles/colors";
+import { useScrollColor } from "@/hooks/useScrollColor";
 import PodcastRecording from "@/assets/podcast-recording.jpg";
 
+
 export default function About() {
+  const backgroundColor = useScrollColor('black', getColor('pastelCrimson'));
   return (
     <section
       id="about"
-      className="w-full py-24"
-      style={{ backgroundColor: getColor("pastelCrimson") }}
+      className="w-full py-24 transition-colors duration-700"
+      style={{ backgroundColor }}
     >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="heading-2 mb-12 text-center text-white">

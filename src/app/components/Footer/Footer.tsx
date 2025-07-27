@@ -1,9 +1,13 @@
-	import Location from './Location';
+"use client";
+
+import { useScrollColor } from "@/hooks/useScrollColor";
+import Location from './Location';
 import Socials from './Socials';
 
 export default function Footer() {
+  const backgroundColor = useScrollColor('black', '#3F6FC4');
   return (
-    <footer className="w-full py-12" style={{ backgroundColor: '#3F6FC4' }}>
+    <footer id="scroll-section" className="w-full py-12 transition-colors duration-700" style={{ backgroundColor }}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
           <div>

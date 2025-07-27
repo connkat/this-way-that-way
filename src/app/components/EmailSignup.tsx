@@ -1,6 +1,11 @@
-	export default function EmailSignup() {
+"use client";
+
+import { useScrollColor } from "@/hooks/useScrollColor";
+
+export default function EmailSignup() {
+  const backgroundColor = useScrollColor('black', '#EACF7F');
   return (
-    <section className="w-full py-24" style={{ backgroundColor: '#EACF7F' }}>
+    <section id="scroll-section" className="w-full py-24 transition-colors duration-700" style={{ backgroundColor }}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center">
           <h2 className="heading-2 mb-8 text-3xl">Stay Updated</h2>
