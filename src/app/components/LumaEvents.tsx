@@ -1,6 +1,6 @@
 export default function LumaEvents() {
   return (
-    <section className="w-full py-16" style={{ backgroundColor: "#E2B199" }}>
+    <section id="events" className="w-full py-16" style={{ backgroundColor: "#E2B199" }}>
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="heading-2 mb-8 text-center">Upcoming Events</h2>
         <p className="body-base text-white">

@@ -5,6 +5,7 @@ import PodcastRecording from "@/assets/podcast-recording.jpg";
 export default function About() {
   return (
     <section
+      id="about"
       className="w-full py-24"
       style={{ backgroundColor: getColor("pastelCrimson") }}
     >

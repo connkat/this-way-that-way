@@ -1,3 +1,5 @@
+"use client";
+
 import { getColor } from "@/styles/colors";
 
 export default function Overview() {
@@ -40,6 +42,10 @@ export default function Overview() {
             href="#events"
             className="px-8 py-3 rounded-lg font-fine-bold text-black transition-transform hover:scale-105"
             style={{ backgroundColor: getColor("pastelYellow") }}
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             View Events
           </a>
@@ -47,6 +53,10 @@ export default function Overview() {
             href="#about"
             className="px-8 py-3 rounded-lg font-fine-bold text-white transition-transform hover:scale-105"
             style={{ backgroundColor: getColor("blue") }}
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             Learn More
           </a>
