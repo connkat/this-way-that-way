@@ -1,0 +1,26 @@
+		export default function LumaEvents() {
+  return (
+    <section className="w-full py-16" style={{ backgroundColor: '#E2B199' }}>
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="heading-2 mb-8 text-center">Upcoming Events</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Event Card Example */}
+          <div className="rounded-lg p-6 bg-white shadow-lg">
+            <h3 className="font-standard-bold text-xl mb-2">Next Episode Recording</h3>
+            <p className="font-fine-regular mb-4">Join us live for our next episode recording!</p>
+            <div className="flex justify-between items-center">
+              <span className="font-fine-light">Dec 1, 2025</span>
+              <a 
+                href="#" 
+                className="font-fine-bold px-4 py-2 rounded-lg text-white"
+                style={{ backgroundColor: '#3F6FC4' }}
+              >
+                Register
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
