@@ -36,7 +36,7 @@ export default function Footer() {
                 This Way That Way
               </h3>
               <p className="font-standard-regular">
-                A podcast about finding your path in tech.
+                A podcast about finding your path.
               </p>
             </div>
             <div className="flex justify-center md:justify-end">

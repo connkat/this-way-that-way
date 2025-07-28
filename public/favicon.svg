@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="leftClip">
+      <polygon points="0,0 32,0 0,32" />
+    </clipPath>
+    <clipPath id="rightClip">
+      <polygon points="32,0 32,32 0,32" />
+    </clipPath>
+  </defs>
+
+  <!-- Container with rounded corners -->
+  <path d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" fill="#3F6FC4"/>
+
+  <!-- This Way section (pastelCrimson) -->
+  <path d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" fill="#DE909E" clip-path="url(#leftClip)"/>
+
+  <!-- That Way section (pastelOrange) -->
+  <path d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" fill="#E2B199" clip-path="url(#rightClip)"/>
+
+  <!-- Text -->
+  <text x="4" y="12" font-family="Arial" font-size="7" font-weight="bold" fill="#3F6FC4">this</text>
+  <text x="17" y="24" font-family="Arial" font-size="7" font-weight="bold" fill="#3F6FC4">that</text>
+</svg>

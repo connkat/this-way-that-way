@@ -16,7 +16,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "This Way That Way",
-  description: "Created by github.com/connkat",
+  description:
+    "A monthly interview series about taking a distinctive path in career and life.",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      url: "/favicon.svg",
+    },
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon.ico",
+    },
+  ],
 };
 
 export default function RootLayout({
