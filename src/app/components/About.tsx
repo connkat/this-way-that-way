@@ -7,10 +7,10 @@ import PodcastRecording from "@/assets/podcast-recording.jpg";
 
 
 export default function About() {
-  const backgroundColor = useScrollColor('black', getColor('pastelCrimson'));
+  const backgroundColor = useScrollColor('about-section', 'black', getColor('pastelCrimson'));
   return (
     <section
-      id="about"
+      id="about-section"
       className="w-full py-24 transition-colors duration-700"
       style={{ backgroundColor }}
     >

@@ -1,10 +1,12 @@
 "use client";
 
 import { getColor } from "@/styles/colors";
+import { useScrollColor } from "@/hooks/useScrollColor";
 
 export default function Overview() {
+  const backgroundColor = useScrollColor('overview-section', 'black', 'black');
   return (
-    <section className="relative w-full min-h-screen bg-black overflow-hidden">
+    <section id="overview-section" className="relative w-full min-h-screen overflow-hidden transition-colors duration-700" style={{ backgroundColor }}>
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/70 z-10"></div>
 
@@ -44,7 +46,7 @@ export default function Overview() {
             style={{ backgroundColor: getColor("pastelYellow") }}
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('events-section')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             View Events
@@ -55,7 +57,7 @@ export default function Overview() {
             style={{ backgroundColor: getColor("blue") }}
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('about-section')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             Learn More

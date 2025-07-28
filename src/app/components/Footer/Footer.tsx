@@ -5,9 +5,9 @@ import Location from './Location';
 import Socials from './Socials';
 
 export default function Footer() {
-  const backgroundColor = useScrollColor('black', '#3F6FC4');
+  const backgroundColor = useScrollColor('footer-section', 'black', '#3F6FC4');
   return (
-    <footer id="scroll-section" className="w-full py-12 transition-colors duration-700" style={{ backgroundColor }}>
+    <footer id="footer-section" className="w-full py-12 transition-colors duration-700" style={{ backgroundColor }}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
           <div>

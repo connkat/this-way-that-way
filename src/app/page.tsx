@@ -9,10 +9,10 @@ export default function Home() {
     <div className="font-sans min-h-screen w-full">
       <main className="w-full">
         <Overview />
-        <EmailSignup />
+        <EmailSignup sectionId="email-section-1" />
         <LumaEvents />
         <About />
-        <EmailSignup />
+        <EmailSignup sectionId="email-section-2" />
       </main>
       <Footer />
     </div>

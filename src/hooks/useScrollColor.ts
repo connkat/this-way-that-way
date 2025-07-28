@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useScrollColor = (initialColor: string, finalColor: string) => {
+export const useScrollColor = (sectionId: string, initialColor: string, finalColor: string) => {
   const [backgroundColor, setBackgroundColor] = useState('black');
 
   useEffect(() => {
@@ -15,11 +15,11 @@ export const useScrollColor = (initialColor: string, finalColor: string) => {
         });
       },
       {
-        threshold: 0.5, // Trigger when 50% of the element is visible
+        threshold: 0.3, // Trigger when 30% of the element is visible
       }
     );
 
-    const element = document.getElementById('scroll-section');
+    const element = document.getElementById(sectionId);
     if (element) {
       observer.observe(element);
     }
@@ -29,7 +29,7 @@ export const useScrollColor = (initialColor: string, finalColor: string) => {
         observer.unobserve(element);
       }
     };
-  }, [finalColor]);
+  }, [sectionId, finalColor]);
 
   return backgroundColor;
 };
