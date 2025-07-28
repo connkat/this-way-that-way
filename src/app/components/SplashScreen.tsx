@@ -85,7 +85,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
       {isClickable && (
         <div className="absolute bottom-20 inset-x-0 z-10 flex items-center justify-center">
           <p
-            className="text-xl opacity-0 animate-fade-in-4 transition-colors duration-200"
+            className="text-xl opacity-0 animate-fade-in-click transition-colors duration-200"
             style={{ color: getColor("cream") }}
             onMouseEnter={(e) =>
               (e.currentTarget.style.color = getColor("blue"))

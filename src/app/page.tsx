@@ -6,15 +6,11 @@ import LumaEvents from "@/app/components/LumaEvents";
 import About from "@/app/components/About";
 import Footer from "@/app/components/Footer/Footer";
 
-import { useState } from "react";
 import SplashScreen from "./components/SplashScreen";
+import { useSplashScreen } from "@/hooks/useSplashScreen";
 
 export default function Home() {
-  const [showContent, setShowContent] = useState(false);
-
-  const handleSplashComplete = () => {
-    setShowContent(true);
-  };
+  const { showContent, handleSplashComplete } = useSplashScreen();
 
   return (
     <div className={`font-sans min-h-screen w-full ${!showContent ? 'no-scroll' : ''}`}>
