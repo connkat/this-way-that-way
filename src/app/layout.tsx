@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   ],
   description:
-    "A monthly interview series about taking a distinctive path in career and life.",
+    "A monthly interview series about taking a distinctive path in career and life. Recorded live at House 831 in Calgary, Canada",
   openGraph: {
     title: "This Way That Way Podcast",
     description:
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "This Way That Way Podcast",
     description:
-      "A monthly interview series about taking a distinctive path in career and life.",
+      "This Way That Way is a monthly interview series exploring unique career journeys and life paths. Join us as we dive deep into conversations with individuals who have taken the road less traveled in their professional and personal lives.",
     images: ["https://this-way-that-way.netlify.app/house-upstairs.jpg"],
   },
   icons: [
