@@ -5,7 +5,11 @@ import { getColor } from "@/styles/colors";
 import { useScrollColor } from "@/hooks/useScrollColor";
 import PodcastRecording2 from "@/assets/podcast-recording2.jpg";
 
-export default function Overview() {
+interface OverviewProps {
+  showContent: boolean;
+}
+
+export default function Overview({ showContent }: OverviewProps) {
   const backgroundColor = useScrollColor("overview-section", "black", "black");
   return (
     <section
@@ -30,26 +34,26 @@ export default function Overview() {
       {/* Content */}
       <div className="relative z-20 w-full min-h-screen flex flex-col items-center justify-center px-4">
         <h1
-          className="font-standard-bold text-[5rem] leading-tight mb-6 text-center animate-fade-in-1"
+          className={`font-standard-bold text-[5rem] leading-tight mb-6 text-center ${showContent ? 'animate-fade-in-1' : ''}`}
           style={{ color: getColor("pastelYellow") }}
         >
           A monthly interview series
           <br />
           <span
-            className="font-standard-bold animate-fade-in-2"
+            className={`font-standard-bold ${showContent ? 'animate-fade-in-2' : ''}`}
             style={{ color: getColor("pastelOrange") }}
           >
             about taking a distinctive path
           </span>
           <br />
           <span
-            className="font-standard-bold animate-fade-in-3"
+            className={`font-standard-bold ${showContent ? 'animate-fade-in-3' : ''}`}
             style={{ color: getColor("pastelCrimson") }}
           >
             in career and life.
           </span>
         </h1>
-        <div className="flex gap-6 mt-8 animate-fade-in-4">
+        <div className={`flex gap-6 mt-8 ${showContent ? 'animate-fade-in-4' : ''}`}>
           <a
             href="#events"
             className="px-8 py-3 rounded-lg font-standard-bold transition-transform hover:scale-105"

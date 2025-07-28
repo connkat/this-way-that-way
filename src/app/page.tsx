@@ -24,7 +24,7 @@ export default function Home() {
           showContent ? "opacity-100" : "opacity-0"
         }`}
       >
-        <Overview />
+        <Overview showContent={showContent} />
         <EmailSignup sectionId="email-section-1" />
         <LumaEvents />
         <About />
