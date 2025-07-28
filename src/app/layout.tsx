@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "This Way That Way Podcast",
     images: [
       {
-        url: "/house-upstairs.jpg",
+        url: "https://this-way-that-way.netlify.app/house-upstairs.jpg",
         width: 1200,
         height: 800,
         alt: "This Way That Way - Career and Life Paths",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "This Way That Way Podcast",
     description:
       "A monthly interview series about taking a distinctive path in career and life.",
-    images: ["/house-upstairs.jpg"],
+    images: ["https://this-way-that-way.netlify.app/house-upstairs.jpg"],
   },
   icons: [
     {
