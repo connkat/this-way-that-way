@@ -51,7 +51,7 @@ export default function About() {
               >
                 Whether you&apos;re exploring your own potential, navigating the
                 demands of career choices, finding fulfillment, or in the blank
-                space beyond achievement…. there&apos;s something here for you.
+                space beyond achievement…there&apos;s something here for you.
                 These sessions are designed to entertain, nurture, and serve.
               </p>
             </div>
