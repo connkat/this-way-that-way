@@ -3,9 +3,13 @@
 import { useScrollColor } from "@/hooks/useScrollColor";
 
 export default function LumaEvents() {
-  const backgroundColor = useScrollColor('events-section', 'black', '#E2B199');
+  const backgroundColor = useScrollColor("events-section", "black", "#E2B199");
   return (
-    <section id="events-section" className="w-full py-16 transition-colors duration-700" style={{ backgroundColor }}>
+    <section
+      id="events-section"
+      className="w-full py-16 section-transition"
+      style={{ backgroundColor }}
+    >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="heading-2 mb-8 text-center">Upcoming Events</h2>
         <p className="body-base text-white">

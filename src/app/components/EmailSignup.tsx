@@ -9,7 +9,7 @@ interface EmailSignupProps {
 export default function EmailSignup({ sectionId = 'email-section-1' }: EmailSignupProps) {
   const backgroundColor = useScrollColor(sectionId, 'black', '#EACF7F');
   return (
-    <section id={sectionId} className="w-full py-24 transition-colors duration-700" style={{ backgroundColor }}>
+    <section id={sectionId} className="w-full py-24 section-transition" style={{ backgroundColor }}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center">
           <h2 className="heading-2 mb-8 text-3xl">Stay Updated</h2>

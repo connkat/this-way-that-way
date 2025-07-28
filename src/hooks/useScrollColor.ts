@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-export const useScrollColor = (sectionId: string, initialColor: string, finalColor: string) => {
-  const [backgroundColor, setBackgroundColor] = useState('black');
+export const useScrollColor = (
+  sectionId: string,
+  initialColor: string,
+  finalColor: string
+) => {
+  const [backgroundColor, setBackgroundColor] = useState("black");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -10,7 +14,7 @@ export const useScrollColor = (sectionId: string, initialColor: string, finalCol
           if (entry.isIntersecting) {
             setBackgroundColor(finalColor);
           } else {
-            setBackgroundColor('black');
+            setBackgroundColor("black");
           }
         });
       },
