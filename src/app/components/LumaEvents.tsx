@@ -1,9 +1,10 @@
 "use client";
 
 import { useScrollColor } from "@/hooks/useScrollColor";
+import { getColor } from "@/styles/colors";
 
 export default function LumaEvents() {
-  const backgroundColor = useScrollColor("events-section", "black", "#E2B199");
+  const backgroundColor = useScrollColor("events-section", "black", getColor("pastelOrange"));
   return (
     <section
       id="events-section"
@@ -21,7 +22,7 @@ export default function LumaEvents() {
           The 60 min sessions happens monthly in 2025-2026, upstairs at House
           831, from Sept to June.
         </p>
-        <p className="body-base text-white font-fine-bold">
+        <p className="body-base text-white font-standard-bold">
           Session attendance is limited by space to ~30 people. We&apos;d love
           to have you there.
         </p>
@@ -32,7 +33,7 @@ export default function LumaEvents() {
             <h3 className="font-standard-bold text-xl mb-2">
               Next Episode Recording
             </h3>
-            <p className="font-fine-regular mb-4">
+            <p className="font-standard-regular mb-4">
               Join us live for our next episode recording!
             </p>
             <p className="body-base text-white/80">
@@ -40,11 +41,11 @@ export default function LumaEvents() {
               This Way That Way online.
             </p>
             <div className="flex justify-between items-center">
-              <span className="font-fine-light">Dec 1, 2025</span>
+              <span className="font-standard-light">Dec 1, 2025</span>
               <a
                 href="#"
-                className="font-fine-bold px-4 py-2 rounded-lg text-white"
-                style={{ backgroundColor: "#3F6FC4" }}
+                className="font-standard-bold px-4 py-2 rounded-lg text-white"
+                style={{ backgroundColor: getColor("blue") }}
               >
                 Register
               </a>

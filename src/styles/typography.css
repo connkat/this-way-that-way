@@ -1,20 +1,20 @@
 /* GT Ultra Fine */
 .font-fine {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
 }
 
 .font-fine-light {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
   font-weight: 300;
 }
 
 .font-fine-regular {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
   font-weight: 400;
 }
 
 .font-fine-bold {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
   font-weight: 700;
 }
 
@@ -130,21 +130,21 @@
 
 /* Body text presets */
 .body-large {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
   font-weight: 400;
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
 }
 
 .body-base {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
   font-weight: 400;
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
 }
 
 .body-small {
-  font-family: var(--font-gt-ultra-fine);
+  font-family: var(--font-gt-ultra-standard);
   font-weight: 400;
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */

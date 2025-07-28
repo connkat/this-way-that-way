@@ -1,11 +1,12 @@
 "use client";
 
 import { useScrollColor } from "@/hooks/useScrollColor";
+import { getColor } from "@/styles/colors";
 import Location from "./Location";
 import Socials from "./Socials";
 
 export default function Footer() {
-  const backgroundColor = useScrollColor("footer-section", "black", "#3F6FC4");
+  const backgroundColor = useScrollColor("footer-section", "black", getColor("blue"));
   return (
     <footer
       id="footer-section"
@@ -18,7 +19,7 @@ export default function Footer() {
             <h3 className="font-standard-bold text-xl mb-4">
               This Way That Way
             </h3>
-            <p className="font-fine-regular">
+            <p className="font-standard-regular">
               A podcast about finding your path in tech.
             </p>
           </div>
@@ -26,7 +27,7 @@ export default function Footer() {
           <Socials />
         </div>
         <div className="mt-8 pt-8 border-t border-white/20 text-white/80">
-          <p className="font-fine-light text-sm text-center">
+          <p className="font-standard-light text-sm text-center">
             © {new Date().getFullYear()} This Way That Way. All rights reserved.
           </p>
         </div>

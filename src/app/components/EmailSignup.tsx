@@ -1,15 +1,22 @@
 "use client";
 
 import { useScrollColor } from "@/hooks/useScrollColor";
+import { getColor } from "@/styles/colors";
 
 interface EmailSignupProps {
   sectionId?: string;
 }
 
-export default function EmailSignup({ sectionId = 'email-section-1' }: EmailSignupProps) {
-  const backgroundColor = useScrollColor(sectionId, 'black', '#EACF7F');
+export default function EmailSignup({
+  sectionId = "email-section-1",
+}: EmailSignupProps) {
+  const backgroundColor = useScrollColor(sectionId, "black", getColor("pastelYellow"));
   return (
-    <section id={sectionId} className="w-full py-24 section-transition" style={{ backgroundColor }}>
+    <section
+      id={sectionId}
+      className="w-full py-24 section-transition"
+      style={{ backgroundColor }}
+    >
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center">
           <h2 className="heading-2 mb-8 text-3xl">Stay Updated</h2>
@@ -18,12 +25,12 @@ export default function EmailSignup({ sectionId = 'email-section-1' }: EmailSign
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="font-fine-regular p-4 rounded-lg border-2 border-[#3F6FC4] focus:outline-none focus:border-[#DE909E] w-full"
+                className="font-standard-regular p-4 rounded-lg border-2 border-blue focus:outline-none focus:border-pastelCrimson w-full"
               />
               <button
                 type="submit"
-                className="font-fine-bold py-4 px-6 rounded-lg text-white w-full transition-transform hover:scale-105"
-                style={{ backgroundColor: '#3F6FC4' }}
+                className="font-standard-bold py-4 px-6 rounded-lg text-white w-full transition-transform hover:scale-105"
+                style={{ backgroundColor: getColor("blue") }}
               >
                 Subscribe to Newsletter
               </button>

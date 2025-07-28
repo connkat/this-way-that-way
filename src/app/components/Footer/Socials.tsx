@@ -3,13 +3,22 @@ export default function Socials() {
     <div>
       <h3 className="font-standard-bold text-xl mb-4">Follow Us</h3>
       <div className="space-y-2">
-        <a href="#" className="font-fine-regular hover:text-[#F8F269] block">
+        <a
+          href="#"
+          className="font-standard-regular block transition-colors hover:text-[#F8F269]"
+        >
           Twitter
         </a>
-        <a href="#" className="font-fine-regular hover:text-[#F8F269] block">
+        <a
+          href="#"
+          className="font-standard-regular block transition-colors hover:text-[#F8F269]"
+        >
           Instagram
         </a>
-        <a href="#" className="font-fine-regular hover:text-[#F8F269] block">
+        <a
+          href="#"
+          className="font-standard-regular block transition-colors hover:text-[#F8F269]"
+        >
           LinkedIn
         </a>
       </div>

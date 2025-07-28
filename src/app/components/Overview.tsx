@@ -52,7 +52,7 @@ export default function Overview() {
         <div className="flex gap-6 mt-8 animate-fade-in-4">
           <a
             href="#events"
-            className="px-8 py-3 rounded-lg font-fine-bold text-black transition-transform hover:scale-105"
+            className="px-8 py-3 rounded-lg font-standard-bold text-black transition-transform hover:scale-105"
             style={{ backgroundColor: getColor("pastelYellow") }}
             onClick={(e) => {
               e.preventDefault();
@@ -65,7 +65,7 @@ export default function Overview() {
           </a>
           <a
             href="#about"
-            className="px-8 py-3 rounded-lg font-fine-bold text-white transition-transform hover:scale-105"
+            className="px-8 py-3 rounded-lg font-standard-bold text-white transition-transform hover:scale-105"
             style={{ backgroundColor: getColor("blue") }}
             onClick={(e) => {
               e.preventDefault();
