@@ -1,12 +1,12 @@
 "use client";
 
-import Overview from "@/app/components/Overview";
-import EmailSignup from "@/app/components/EmailSignup";
-import LumaEvents from "@/app/components/LumaEvents";
-import About from "@/app/components/About";
-import Footer from "@/app/components/Footer/Footer";
-
 import SplashScreen from "./components/SplashScreen";
+import Overview from "./components/Overview";
+import LumaEvents from "./components/LumaEvents";
+import About from "./components/About";
+import EmailSignup from "./components/EmailSignup";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
 import { useSplashScreen } from "@/hooks/useSplashScreen";
 
 export default function Home() {
@@ -21,6 +21,7 @@ export default function Home() {
         }`}
       >
         <Overview showContent={showContent} />
+        <Header />
         <EmailSignup sectionId="email-section-1" />
         <LumaEvents />
         <About />
