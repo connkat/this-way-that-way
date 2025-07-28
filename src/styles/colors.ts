@@ -4,6 +4,7 @@ export const colors = {
   pastelYellow: "#EACF7F",
   pastelCrimson: "#DE909E",
   blue: "#3F6FC4",
+  cream: "#FFFDD0",
 } as const;
 
 export type ColorName = keyof typeof colors;

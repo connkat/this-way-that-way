@@ -7,7 +7,7 @@ export default function LumaEvents() {
   const backgroundColor = useScrollColor(
     "events-section",
     "black",
-    getColor("pastelOrange")
+    getColor("pastelCrimson")
   );
   return (
     <section

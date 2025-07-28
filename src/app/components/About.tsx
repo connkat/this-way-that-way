@@ -9,7 +9,7 @@ export default function About() {
   const backgroundColor = useScrollColor(
     "about-section",
     "black",
-    getColor("pastelCrimson")
+    getColor("pastelOrange")
   );
   return (
     <section

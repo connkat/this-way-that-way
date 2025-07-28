@@ -1,27 +1,37 @@
-@keyframes slideOutLeft {
+@keyframes slideInFromBelow {
   0% {
-    transform: translateX(0) skew(0deg);
+    transform: translate(-50%, 200%) rotate(-45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
-    transform: translateX(-100%) skew(-45deg);
+    transform: translate(0, 0) rotate(-45deg);
+    opacity: 1;
   }
 }
 
-@keyframes slideOutRight {
+@keyframes slideInFromAbove {
   0% {
-    transform: translateX(0) skew(0deg);
+    transform: translate(50%, -200%) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
-    transform: translateX(100%) skew(-45deg);
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 1;
   }
 }
 
-.slide-out-left {
-  animation: slideOutLeft 1s ease-in-out forwards;
+.slide-in-from-below {
+  animation: slideInFromBelow 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-.slide-out-right {
-  animation: slideOutRight 1s ease-in-out forwards;
+.slide-in-from-above {
+  animation: slideInFromAbove 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .diagonal-split {
@@ -30,6 +40,19 @@
 
 .diagonal-split-reverse {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+
+.animate-fade-in-4 {
+  animation: fadeIn 0.5s ease-in-out 0.5s forwards;
 }
 
 .no-scroll {
