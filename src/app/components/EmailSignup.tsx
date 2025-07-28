@@ -10,7 +10,11 @@ interface EmailSignupProps {
 export default function EmailSignup({
   sectionId = "email-section-1",
 }: EmailSignupProps) {
-  const backgroundColor = useScrollColor(sectionId, "black", getColor("pastelYellow"));
+  const backgroundColor = useScrollColor(
+    sectionId,
+    "black",
+    getColor("pastelYellow")
+  );
   return (
     <section
       id={sectionId}
@@ -19,18 +23,27 @@ export default function EmailSignup({
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center">
-          <h2 className="heading-2 mb-8 text-3xl">Stay Updated</h2>
+          <h2
+            className="heading-2 mb-8 text-3xl"
+            style={{ color: getColor("cream") }}
+          >
+            Stay Updated
+          </h2>
           <div className="max-w-md w-full">
             <form className="flex flex-col gap-4">
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="font-standard-regular p-4 rounded-lg border-2 border-blue focus:outline-none focus:border-pastelCrimson w-full"
+                style={{ color: getColor("cream") }}
               />
               <button
                 type="submit"
-                className="font-standard-bold py-4 px-6 rounded-lg text-white w-full transition-transform hover:scale-105"
-                style={{ backgroundColor: getColor("blue") }}
+                className="font-standard-bold py-4 px-6 rounded-lg w-full transition-transform hover:scale-105"
+                style={{
+                  backgroundColor: getColor("blue"),
+                  color: getColor("cream"),
+                }}
               >
                 Subscribe to Newsletter
               </button>

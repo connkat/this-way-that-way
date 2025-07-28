@@ -32,17 +32,23 @@ export default function About() {
         />
       </div>
       <div className="relative max-w-6xl mx-auto px-4">
-        <h2 className="heading-2 mb-12 text-center text-white">
+        <h2
+          className="heading-2 mb-12 text-center"
+          style={{ color: getColor("cream") }}
+        >
           About The Podcast
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <p className="body-large text-white">
+            <p className="body-large" style={{ color: getColor("lightCream") }}>
               This Way That Way is an interview-style discussion with people
               who&#39;ve followed their unique calling to something special.
             </p>
             <div className="bg-white/10 rounded-lg p-6 space-y-4">
-              <p className="body-base text-white">
+              <p
+                className="body-base"
+                style={{ color: getColor("lightCream") }}
+              >
                 Whether you&apos;re exploring your own potential, navigating the
                 demands of career choices, finding fulfillment, or in the blank
                 space beyond achievement…. there&apos;s something here for you.

@@ -6,6 +6,7 @@ export const colors = {
   pastelCrimson: "#DE909E",
   blue: "#3F6FC4",
   cream: "#FFFDD0",
+  lightCream: "#FFFEF2",
 
   // Theme colors
   lightBackground: "#ffffff",

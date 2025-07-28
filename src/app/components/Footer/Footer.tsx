@@ -6,18 +6,25 @@ import Location from "./Location";
 import Socials from "./Socials";
 
 export default function Footer() {
-  const backgroundColor = useScrollColor("footer-section", "black", getColor("blue"));
+  const backgroundColor = useScrollColor(
+    "footer-section",
+    "black",
+    getColor("blue")
+  );
   return (
     <footer
       id="footer-section"
-      className="w-full py-12 section-transition"
+      className="w-full py-8 section-transition"
       style={{ backgroundColor }}
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white items-start">
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start"
+          style={{ color: getColor("cream") }}
+        >
           <Location />
           <div className="text-center md:text-left">
-            <h3 className="font-standard-bold text-xl mb-4">
+            <h3 className="font-standard-bold text-xl mb-2">
               This Way That Way
             </h3>
             <p className="font-standard-regular">
@@ -28,7 +35,14 @@ export default function Footer() {
             <Socials />
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-white/20 text-white/80">
+        <div
+          className="mt-4 pt-4 border-t"
+          style={{
+            borderColor: `${getColor("cream")}33`,
+            color: getColor("cream"),
+            opacity: 0.8,
+          }}
+        >
           <p className="font-standard-light text-sm text-center">
             © {new Date().getFullYear()} This Way That Way. All rights reserved.
           </p>
