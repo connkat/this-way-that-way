@@ -15,9 +15,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "This Way That Way",
+  title: "This Way That Way Podcast",
   description:
     "A monthly interview series about taking a distinctive path in career and life.",
+  openGraph: {
+    title: "This Way That Way Podcast",
+    description: "A monthly interview series about taking a distinctive path in career and life.",
+    type: "website",
+    siteName: "This Way That Way Podcast",
+    images: [
+      {
+        url: "/house-upstairs.jpg",
+        width: 1200,
+        height: 800,
+        alt: "This Way That Way - Career and Life Paths"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "This Way That Way Podcast",
+    description: "A monthly interview series about taking a distinctive path in career and life.",
+    images: ["/house-upstairs.jpg"]
+  },
   icons: [
     {
       rel: "icon",
