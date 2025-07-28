@@ -1,4 +1,5 @@
 import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { getColor } from "@/styles/colors";
 
 export default function Socials() {
   return (
@@ -7,19 +8,22 @@ export default function Socials() {
       <div className="flex flex-row space-x-4">
         <a
           href="#"
-          className="font-standard-regular flex items-center gap-2 transition-colors hover:text-[#F8F269]"
+          className="font-standard-regular flex items-center gap-2 transition-colors"
+          style={{ "--hover-color": getColor("yellow") } as React.CSSProperties}
         >
           <FaXTwitter size={20} />
         </a>
         <a
           href="#"
-          className="font-standard-regular flex items-center gap-2 transition-colors hover:text-[#F8F269]"
+          className="font-standard-regular flex items-center gap-2 transition-colors"
+          style={{ "--hover-color": getColor("yellow") } as React.CSSProperties}
         >
           <FaInstagram size={20} />
         </a>
         <a
           href="#"
-          className="font-standard-regular flex items-center gap-2 transition-colors hover:text-[#F8F269]"
+          className="font-standard-regular flex items-center gap-2 transition-colors"
+          style={{ "--hover-color": getColor("yellow") } as React.CSSProperties}
         >
           <FaLinkedin size={20} />
         </a>

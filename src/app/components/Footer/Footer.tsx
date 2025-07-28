@@ -14,8 +14,9 @@ export default function Footer() {
       style={{ backgroundColor }}
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white items-start">
+          <Location />
+          <div className="text-center md:text-left">
             <h3 className="font-standard-bold text-xl mb-4">
               This Way That Way
             </h3>
@@ -23,8 +24,9 @@ export default function Footer() {
               A podcast about finding your path in tech.
             </p>
           </div>
-          <Location />
-          <Socials />
+          <div className="flex justify-center md:justify-end">
+            <Socials />
+          </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/20 text-white/80">
           <p className="font-standard-light text-sm text-center">

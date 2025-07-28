@@ -2,8 +2,13 @@
 @import "../styles/typography.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--light-background);
+  --foreground: var(--light-foreground);
+
+  /* Add hover styles */
+  .transition-colors:hover {
+    color: var(--hover-color);
+  }
 }
 
 :root {
@@ -15,8 +20,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--dark-background);
+    --foreground: var(--dark-foreground);
   }
 }
 
