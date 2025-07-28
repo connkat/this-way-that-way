@@ -48,7 +48,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
         >
           <div className="h-full flex items-center justify-center">
             <h1
-              className={`font-standard-bold ${isMobile ? 'text-4xl' : 'text-[5rem]'} leading-tight transition-colors duration-300 slide-in-from-below`}
+              className={`font-standard-bold ${isMobile ? 'text-4xl' : 'text-[5rem]'} leading-tight transition-colors duration-300 ${isMobile ? 'slide-in-from-left' : 'slide-in-from-below'}`}
               style={{ color: getColor("cream") }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.color = getColor("blue"))
@@ -70,7 +70,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
         >
           <div className="h-full flex items-center justify-center">
             <h1
-              className={`font-standard-bold ${isMobile ? 'text-4xl' : 'text-[5rem]'} leading-tight transition-colors duration-300 slide-in-from-above`}
+              className={`font-standard-bold ${isMobile ? 'text-4xl' : 'text-[5rem]'} leading-tight transition-colors duration-300 ${isMobile ? 'slide-in-from-right' : 'slide-in-from-above'}`}
               style={{ color: getColor("cream") }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.color = getColor("blue"))
