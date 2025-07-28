@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "This Way That Way Podcast",
   authors: [
     {
-      name: "Katherine Connolly",
+      name: "Kat Connolly",
       url: "https://connkat.com",
     },
   ],
@@ -27,8 +27,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "This Way That Way Podcast",
     description:
-      "A monthly interview series about taking a distinctive path in career and life.",
+      "A monthly interview series about taking a distinctive path in career and life. Recorded live at House 831 in Calgary, Canada",
     type: "website",
+    url: "https://this-way-that-way.netlify.app",
     siteName: "This Way That Way Podcast",
     images: [
       {
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "This Way That Way Podcast",
     description:
-      "This Way That Way is a monthly interview series exploring unique career journeys and life paths. Join us as we dive deep into conversations with individuals who have taken the road less traveled in their professional and personal lives.",
+      "A monthly interview series about taking a distinctive path in career and life. Recorded live at House 831 in Calgary, Canada",
     images: ["https://this-way-that-way.netlify.app/house-upstairs.jpg"],
   },
   icons: [
