@@ -1,0 +1,40 @@
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0) skew(0deg);
+  }
+  100% {
+    transform: translateX(-100%) skew(-45deg);
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0) skew(0deg);
+  }
+  100% {
+    transform: translateX(100%) skew(-45deg);
+  }
+}
+
+.slide-out-left {
+  animation: slideOutLeft 1s ease-in-out forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 1s ease-in-out forwards;
+}
+
+.diagonal-split {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.diagonal-split-reverse {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
