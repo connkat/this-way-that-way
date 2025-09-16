@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "This Way That Way Podcast",
+  title: "This Way That Way",
   authors: [
     {
       name: "Kat Connolly",
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   description:
     "A monthly interview series about taking a distinctive path in career and life. Recorded live at House 831 in Calgary, Canada",
   openGraph: {
-    title: "This Way That Way Podcast",
+    title: "This Way That Way",
     description:
       "A monthly interview series about taking a distinctive path in career and life. Recorded live at House 831 in Calgary, Canada",
     type: "website",
     url: "https://this-way-that-way.netlify.app",
-    siteName: "This Way That Way Podcast",
+    siteName: "This Way That Way",
     images: [
       {
         url: "https://this-way-that-way.netlify.app/house-upstairs.jpg",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "This Way That Way Podcast",
+    title: "This Way That Way",
     description:
       "A monthly interview series about taking a distinctive path in career and life. Recorded live at House 831 in Calgary, Canada",
     images: ["https://this-way-that-way.netlify.app/house-upstairs.jpg"],

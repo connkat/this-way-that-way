@@ -36,7 +36,7 @@ export default function About() {
           className="heading-2 mb-12 text-center"
           style={{ color: getColor("cream") }}
         >
-          About The Podcast
+          About This Way That Way
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">

@@ -54,7 +54,7 @@ export default function LumaEvents() {
             className="body-base font-standard-bold leading-tight"
             style={{ color: getColor("lightCream") }}
           >
-            Coming soon to a podcast platform near you.
+            Coming soon to a platform near you.
           </p>
         </div>
       </div>

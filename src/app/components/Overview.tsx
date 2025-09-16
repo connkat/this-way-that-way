@@ -43,7 +43,7 @@ export default function Overview({ showContent }: OverviewProps) {
           }`}
           style={{ color: getColor("pastelYellow") }}
         >
-          A monthly interview series
+          Interviews about choosing
           <br />
           <span
             className={`font-standard-bold ${
@@ -51,16 +51,7 @@ export default function Overview({ showContent }: OverviewProps) {
             } ${showContent ? "animate-fade-in-2" : ""}`}
             style={{ color: getColor("pastelOrange") }}
           >
-            about taking a distinctive path
-          </span>
-          <br />
-          <span
-            className={`font-standard-bold ${
-              isMobile ? "text-3xl" : isTablet ? "text-5xl" : "text-[5rem]"
-            } ${showContent ? "animate-fade-in-3" : ""}`}
-            style={{ color: getColor("pastelCrimson") }}
-          >
-            in career and life.
+            a distinctive path.
           </span>
         </h1>
         <div
@@ -74,8 +65,8 @@ export default function Overview({ showContent }: OverviewProps) {
               isMobile ? "w-full text-center" : ""
             } px-8 py-3 rounded-lg font-standard-bold transition-transform hover:scale-105`}
             style={{
-              backgroundColor: getColor("pastelYellow"),
-              color: "black",
+              backgroundColor: getColor("blue"),
+              color: getColor("cream"),
             }}
             onClick={(e) => {
               e.preventDefault();
@@ -84,7 +75,7 @@ export default function Overview({ showContent }: OverviewProps) {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            View Events
+            Events
           </a>
           <a
             href="#about"
@@ -102,7 +93,7 @@ export default function Overview({ showContent }: OverviewProps) {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Learn More
+            About
           </a>
         </div>
       </div>

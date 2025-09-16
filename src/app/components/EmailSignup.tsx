@@ -3,21 +3,15 @@
 import { useScrollColor } from "@/hooks/useScrollColor";
 import { getColor } from "@/styles/colors";
 
-interface EmailSignupProps {
-  sectionId?: string;
-}
-
-export default function EmailSignup({
-  sectionId = "email-section-1",
-}: EmailSignupProps) {
+export default function EmailSignup() {
   const backgroundColor = useScrollColor(
-    sectionId,
+    "email-section",
     "black",
     getColor("pastelYellow")
   );
   return (
     <section
-      id={sectionId}
+      id="email-section"
       className="w-full py-24 section-transition"
       style={{ backgroundColor }}
     >

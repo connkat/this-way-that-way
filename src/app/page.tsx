@@ -22,10 +22,9 @@ export default function Home() {
       >
         <Overview showContent={showContent} />
         <Header />
-        <EmailSignup sectionId="email-section-1" />
         <LumaEvents />
         <About />
-        <EmailSignup sectionId="email-section-2" />
+        <EmailSignup/>
       </main>
       <Footer />
     </div>

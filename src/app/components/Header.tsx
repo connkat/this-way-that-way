@@ -47,7 +47,7 @@ export default function Header() {
             className="font-standard-bold text-xl"
             style={{ color: getColor("cream") }}
           >
-            This Way That Way Podcast
+            This Way That Way
           </h1>
           <button
             className="relative z-50 flex flex-col justify-center items-center w-8 h-8 space-y-1.5"
