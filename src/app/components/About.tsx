@@ -44,17 +44,15 @@ export default function About() {
               This Way That Way is an interview-style discussion with people
               who&#39;ve followed their unique calling to something special.
             </p>
-            <div className="bg-white/10 rounded-lg p-6 space-y-4">
-              <p
-                className="body-base"
-                style={{ color: getColor("lightCream") }}
-              >
-                Whether you&apos;re exploring your own potential, navigating the
-                demands of career choices, finding fulfillment, or in the blank
-                space beyond achievement…there&apos;s something here for you.
-                These sessions are designed to entertain, nurture, and serve.
-              </p>
-            </div>
+            <p className="body-large" style={{ color: getColor("lightCream") }}>
+              Interviews will include artists, entrepreneurs, athletes,
+              scientists, and more.
+            </p>
+            <p className="body-large" style={{ color: getColor("lightCream") }}>
+              Whether you&#39;re exploring your potential, navigating its
+              demands, or in the blank space beyond achievement... there&#39;s
+              something here for you.
+            </p>
           </div>
         </div>
       </div>

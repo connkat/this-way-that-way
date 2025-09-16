@@ -27,34 +27,7 @@ export default function LumaEvents() {
             className="body-base text-center"
             style={{ color: getColor("cream") }}
           >
-            Next Episode: TBA
-          </p>
-        </div>
-        <div className="ml-auto max-w-xl space-y-2 text-right">
-          <p
-            className="body-base leading-tight"
-            style={{ color: getColor("lightCream") }}
-          >
-            Interviews will include artists, entrepreneurs, athletes,
-            scientists, and more.
-          </p>
-          <p
-            className="body-base leading-tight"
-            style={{ color: getColor("lightCream") }}
-          >
-            Each episode will focus on a unique path through tech.
-          </p>
-          <p
-            className="body-base leading-tight"
-            style={{ color: getColor("lightCream") }}
-          >
-            Guests will share their stories, insights, and advice.
-          </p>
-          <p
-            className="body-base font-standard-bold leading-tight"
-            style={{ color: getColor("lightCream") }}
-          >
-            Coming soon to a platform near you.
+            Next This Way That Way: TBA
           </p>
         </div>
       </div>
