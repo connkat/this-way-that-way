@@ -1,4 +1,4 @@
-import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { getColor } from "@/styles/colors";
 import { useScreenSize } from "@/hooks/useScreenSize";
 
@@ -11,14 +11,14 @@ export default function Socials() {
       </h3>
       <div className="flex gap-4">
         <a
-          href="#"
+          href="https://x.com/thiswaytha36676"
           className="font-standard-regular flex items-center gap-2 transition-colors"
           style={{ "--hover-color": getColor("yellow") } as React.CSSProperties}
         >
           <FaXTwitter size={20} />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/thiswaythatway.media/"
           className="font-standard-regular flex items-center gap-2 transition-colors"
           style={{ "--hover-color": getColor("yellow") } as React.CSSProperties}
         >
