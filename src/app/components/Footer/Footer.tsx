@@ -21,7 +21,10 @@ export default function Footer() {
     >
       <div className={`max-w-6xl mx-auto ${isMobile ? "px-6" : "px-8"}`}>
         {isMobile ? (
-          <div className="flex justify-between items-start" style={{ color: getColor("lightCream") }}>
+          <div
+            className="flex justify-between items-start"
+            style={{ color: getColor("lightCream") }}
+          >
             <Location />
             <Socials />
           </div>
@@ -31,35 +34,13 @@ export default function Footer() {
             style={{ color: getColor("cream") }}
           >
             <Location />
-            <div className="text-center md:text-left">
-              <h3 className="font-standard-bold text-xl mb-2">
-                This Way That Way
-              </h3>
-              <p className="font-standard-regular">
-                A monthly interview series about taking a distinctive path in career and life.
-              </p>
-            </div>
+            <div className="text-center md:text-left" />
+
             <div className="flex justify-center md:justify-end">
               <Socials />
             </div>
           </div>
         )}
-        <div
-          className={`${isMobile ? "mt-6 pt-4" : "mt-4 pt-4"} border-t`}
-          style={{
-            borderColor: `${getColor("cream")}33`,
-            color: getColor("cream"),
-            opacity: 0.8,
-          }}
-        >
-          <p
-            className={`font-standard-light ${
-              isMobile ? "text-xs" : "text-sm"
-            } text-center`}
-          >
-            {new Date().getFullYear()} This Way That Way. All rights reserved.
-          </p>
-        </div>
       </div>
     </footer>
   );

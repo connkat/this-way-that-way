@@ -39,7 +39,7 @@ export default function EmailSignup() {
                   color: getColor("cream"),
                 }}
               >
-                Subscribe to Newsletter
+                Email Signup
               </button>
             </form>
           </div>
