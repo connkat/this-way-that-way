@@ -86,7 +86,7 @@ export default function Header() {
           <button
             className="w-full py-2 text-lg font-standard-bold transition-colors duration-200 hover:opacity-80"
             style={{ color: getColor("lightCream") }}
-            onClick={() => scrollToSection("email-section-1")}
+            onClick={() => scrollToSection("email-section")}
           >
             Sign Up
           </button>
