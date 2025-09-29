@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { LumaApiResponse } from '@/types/luma';
 
 export async function GET() {
   try {
@@ -8,22 +7,46 @@ export async function GET() {
       throw new Error('LUMA_API_KEY is not configured');
     }
 
-    const response = await fetch('https://api.lu.ma/v1/events', {
+    const url = new URL('https://public-api.luma.com/v1/calendar/list-events');
+
+    const response = await fetch(url.toString(), {
       headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
+        accept: 'application/json',
+        'x-luma-api-key': apiKey,
       },
     });
 
     if (!response.ok) {
-      throw new Error(`Luma API responded with status: ${response.status}`);
+      const errorText = await response.text().catch(() => '');
+      throw new Error(`Luma API responded with status ${response.status}: ${errorText}`);
     }
 
-    const data: LumaApiResponse = await response.json();
-    
-    // Filter only published events and sort by start date
-    const events = data.data
-      .filter(event => event.status === 'published')
+    const data = await response.json();
+    const entries = (data?.entries ?? []) as Array<{
+      api_id: string;
+      event: {
+        api_id: string;
+        name: string;
+        start_at: string;
+        cover_url?: string;
+        url: string;
+      };
+    }>;
+
+    // Map entries to our LumaEvent shape with safe defaults for missing fields
+    const events = entries
+      .map(({ api_id, event }) => ({
+        id: event.api_id || api_id,
+        name: event.name,
+        description: undefined,
+        startAt: event.start_at,
+        endAt: event.start_at,
+        timezone: 'UTC',
+        coverImageUrl: event.cover_url,
+        status: 'published' as const,
+        url: event.url,
+        location: undefined,
+      }))
       .sort((a, b) => new Date(a.startAt).getTime() - new Date(b.startAt).getTime());
 
     return NextResponse.json(events);
