@@ -53,11 +53,6 @@ export const metadata: Metadata = {
       type: "image/svg+xml",
       url: "/favicon.svg",
     },
-    {
-      rel: "icon",
-      type: "image/x-icon",
-      url: "/favicon.ico",
-    },
   ],
 };
 
