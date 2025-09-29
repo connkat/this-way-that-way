@@ -1,12 +1,10 @@
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { getColor } from "@/styles/colors";
-import { useScreenSize } from "@/hooks/useScreenSize";
 
 export default function Socials() {
-  const { isMobile } = useScreenSize();
   return (
     <div className="flex flex-col items-end text-right">
-      <h3 className={`font-standard-bold ${isMobile ? 'text-lg mb-2' : 'text-xl mb-4'}`}>
+      <h3 className="font-standard-bold text-lg mb-2 block sm:hidden">
         Follow This Way That Way
       </h3>
       <div className="flex gap-4">

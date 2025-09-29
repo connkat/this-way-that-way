@@ -75,7 +75,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-      {/* Mobile Menu */}
       <div
         className={`absolute top-full left-0 right-0 z-40 transition-all duration-300 overflow-hidden ${
           isMenuOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"

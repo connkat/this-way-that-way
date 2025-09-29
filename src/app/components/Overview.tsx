@@ -54,48 +54,6 @@ export default function Overview({ showContent }: OverviewProps) {
             a distinctive path.
           </span>
         </h1>
-        <div
-          className={`flex ${isMobile ? "flex-col" : "flex-row"} ${
-            isMobile ? "gap-4" : "gap-6"
-          } mt-8 ${showContent ? "animate-fade-in-4" : ""}`}
-        >
-          <a
-            href="#events"
-            className={`${
-              isMobile ? "w-full text-center" : ""
-            } px-8 py-3 rounded-lg font-standard-bold transition-transform hover:scale-105`}
-            style={{
-              backgroundColor: getColor("blue"),
-              color: getColor("cream"),
-            }}
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .getElementById("events-section")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Events
-          </a>
-          <a
-            href="#about"
-            className={`${
-              isMobile ? "w-full text-center" : ""
-            } px-8 py-3 rounded-lg font-standard-bold transition-transform hover:scale-105`}
-            style={{
-              backgroundColor: getColor("blue"),
-              color: getColor("cream"),
-            }}
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .getElementById("about-section")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            About
-          </a>
-        </div>
       </div>
     </section>
   );

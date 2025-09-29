@@ -8,12 +8,18 @@ import EmailSignup from "./components/EmailSignup";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
 import { useSplashScreen } from "@/hooks/useSplashScreen";
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 export default function Home() {
   const { showContent, handleSplashComplete } = useSplashScreen();
+  const { isMobile } = useScreenSize();
 
   return (
-    <div className={`font-sans min-h-screen w-full ${!showContent ? 'no-scroll' : ''}`}>
+    <div
+      className={`font-sans min-h-screen w-full ${
+        !showContent ? "no-scroll" : ""
+      }`}
+    >
       <SplashScreen onComplete={handleSplashComplete} />
       <main
         className={`w-full transition-opacity duration-500 ${
@@ -21,10 +27,10 @@ export default function Home() {
         }`}
       >
         <Overview showContent={showContent} />
-        <Header />
+        {isMobile ? <Header /> : null}
         <LumaEvents />
         <About />
-        <EmailSignup/>
+        <EmailSignup />
       </main>
       <Footer />
     </div>
