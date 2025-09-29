@@ -4,9 +4,6 @@ import { getColor } from "@/styles/colors";
 export default function Socials() {
   return (
     <div className="flex flex-col items-end text-right">
-      <h3 className="font-standard-bold text-lg mb-2 block sm:hidden">
-        Follow This Way That Way
-      </h3>
       <div className="flex gap-4">
         <a
           href="https://x.com/thiswaytha36676"
