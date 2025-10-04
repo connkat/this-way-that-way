@@ -6,7 +6,7 @@ export interface LumaEvent {
   endAt: string;
   timezone: string;
   coverImageUrl?: string;
-  status: 'draft' | 'published' | 'cancelled';
+  status: "draft" | "published" | "cancelled";
   url: string;
   location?: {
     name?: string;
